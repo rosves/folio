@@ -1,0 +1,24 @@
+/* Variables */
+:root{
+    --black : #0000;
+    --pink : #E9CECB;
+    --green : #255B4D;
+    --rose  : #92564f;
+}
+
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+    box-sizing: border-box;
+}
+li{
+    text-decoration: dotted;
+}
+
+/* Base styles */
+body{
+    background: var(--pink);
+    overflow: hidden; /*optional !!!!*/
+}
