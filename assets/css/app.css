@@ -14,6 +14,7 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
 li{
     list-style-type: none;
 }
@@ -21,27 +22,174 @@ li{
 /* Base styles */
 body{
     background: var(--pink);
-    /*overflow: hidden; optional !!!!*/
+    overflow-x: hidden; 
     font-size: 12px;
     font-family: 'Jost', sans-serif;
-    margin: 50px 0;
+    
+}
+section,article{
+margin: 80px 15px;
+align-self: center;
 }
 
 /* mobile styles */
-/*section 1 : banner + wrapper */
+
 header, .hero--secondary{
     display: none;
 }
-
-h1{
+/*section 1 : banner + wrapper */
+h1, .hero__heading{
     font-size: 3em;
     color:var(--black);
+    width: 100%;
+}
+h2{
+    font-size: 2.2em;
+    text-align: center;
 }
 .front_title, .back_title{
     color: var(--green);
     font-family: 'Italiana', serif;
 }
+#banner{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto 0;
+}
+/* section 2 : à propos de moi */
+p:not(.hero__heading){
+    font-size: 1.5em;
+    text-align: center;
+    margin: 15px 0;
+    width: 100%;
+}
+#a_propos{
+    width: 80%;
+    max-width: 900px;
+   justify-self: center;
+}
+/* section 3 : skills */
 
+/* section 4 : projets */
+#projets{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-gap: 10px
+}
+
+#projets h2{
+    grid-column: 5/9;
+    grid-row: 1;
+}
+#projets_display{
+    grid-column: 1/12;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-gap: 10px
+}
+
+.one{
+    grid-column: 1/12;
+    grid-row: 1;
+    border: 2px red solid;;
+}
+
+.two{
+    grid-column: 1/12;
+    grid-row: 2;
+}
+
+.three{
+    grid-column: 1/12;
+    grid-row: 3;
+}
+.gallery-item{
+    align-self: center;
+   justify-self: center;
+}
+.gallery-item figure{
+    width: 100%;
+}
+
+.gallery-item figure img{
+    width: 100%;
+}
+/* footer*/
+.wrapper-social {
+    display: inline-flex;
+    list-style: none;
+  }
+  
+  .wrapper-social .icon {
+    position: relative;
+    background: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper-social .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper-social .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .wrapper-social .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .wrapper-social .icon:hover span,
+  .wrapper-social .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .wrapper-social .github:hover,
+  .wrapper-social .github:hover .tooltip,
+  .wrapper-social .github:hover .tooltip::before {
+    background: #333333;
+    color: #ffffff;
+  }
+  
+  .wrapper-social .linkedin:hover,
+  .wrapper-social .linkedin:hover .tooltip,
+  .wrapper-social .linkedin:hover .tooltip::before {
+    background: #0a66c2;
+    color: #ffffff;
+  }
 /* small tablet styles */
 
 /* large tablets & laptop styles */
