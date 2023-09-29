@@ -5,27 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Jost:ital,wght@0,400;1,300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/app.css">
+   
 </head>
 
 <body>
     <!-- HEADER -->
     <header>
         <nav>
-            <ol>
-                <li>A propos de moi</li>
-                <li>Projets</li>
-                <li>Contact</li>
-            </ol>
+            <ul>
+                <li class="navLinks"><a href="#a_propos">A propos de moi</a></li>
+                <li class="navLinks"><a href="#skills">Skills</a></li>
+                <li class="navLinks"><a href="#projets">Projets</a></li>
+                <li class="navLinks"><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <!-- SECTION 1 / WRAPPER + BANNER -->
     <section id="wrapper">
-        <div>
-            <h1>Hi! I'm Lytween and
-                I'm a frontend developer</h1>
+        <div class="wrapper">
+            <section id="frontend">
+
+                <div class="hero">
+                    <h1 id="title" class="hero__heading">Hi! I'm Lytween and<br> I'm a <span
+                            class="front_title">frontend
+                            developer</span></h1>
+                </div>
+                <div class="hero hero--secondary" aria-hidden="true" data-hero>
+                    <p class="hero__heading">Hi! I'm Lytween and<br> I'm a<span class="back_title"> frontend
+                            developer</span></p>
+                </div>
+            </section>
         </div>
-        <div></div>
+        <div id="banner">
+            <svg id="text-container" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
+                <path id="text-curve" d="M0 100s269.931 86.612 520 0c250.069-86.612 480 0 480 0" fill="none" />
+
+                <text y="40" font-size="40">
+                    <textPath id="text-path" href="#text-curve" startOffset="200">
+                        * À la recherche d'une alternance pour septembre 2023
+                    </textPath>
+                </text>
+            </svg>
+
+        </div>
     </section>
     <!-- SECTION 2 / A PROPOS DE MOI-->
     <article id="a_propos">
@@ -46,14 +72,53 @@
     <section id="projets">
         <h2>Projets</h2>
         <section>
-            <div></div>
+            <article class="gallery-item one ">
+                <h3>.01</h3>
+                <figure data-index="1"><a href="https://rosves.github.io/todo-list-pictochat/" target="_blank"> <img
+                            src="./assets/img/todolist.png"
+                            alt="interface de la todolist avec inspiration pictochat"></a></figure>
+                <p>Une To-Do List en React, inspirée par Nintendo PictoChat.Les
+                    fonctionnalités incluent l'ajout, la modification et la suppression de tâches. Une fusion entre
+                    gestion de tâches et design Nintendo pour une expérience unique.</p>
+            </article>
+            <article class="gallery-item two">
+                <h3>.02</h3>
+                <figure data-index="2"><a href="./assets/pages/Live chat VICTOIRE Lytween - Copie/index.html"
+                        target="_blank"><img src="./assets/img/livechat.png"
+                            alt="interface du live chat avec un gif d'une tasse de café mignonne"></a></figure>
+                <p>Une application de chat en direct utilisant une API personnalisée. Connectez-vous pour
+                    participer à une conversation en temps réel avec un groupe d'utilisateurs partageant cette API.</p>
+            </article>
+            <article class=" gallery-item three">
+                <h3>.03</h3>
+                <figure data-index="3"><a href="./assets/pages/Jeu WebGl - Copie/html/index.html" target="_blank"><img
+                            src="./assets/img/pierrefeuilleciseaux.png"
+                            alt="interface pierre feuille ciseaux avec un décor de foret asiatique"> </a></figure>
+                <p>Découvrez le jeu de pierre-papier-ciseaux en 3D ! Affrontez l'ordinateur, choisissez vos coups et
+                    suivez votre score via le compteur de points. Une fusion de stratégie et de divertissement pour un
+                    défi solo captivant.</p>
+            </article>
         </section>
     </section>
     <!-- SECTION 5 / FOOTER -->
     <footer>
         <h2>Contactez moi ! </h2>
-        <section></section>
+        <section>
+            <ul class="wrapper-social">
+                <li class="icon github">
+                    <span class="tooltip">Github</span><a href="https://github.com/rosves" target="_blank">
+                        <span><i class="fab fa-github"></i></span></a>
+                </li>
+                <li class="icon linkedin ">
+                    <span class="tooltip">Linkedin</span><a href="https://www.linkedin.com/in/lytween-victoire/"
+                        target="_blank">
+                        <span><i class="fab fa-linkedin"></i></span></a>
+                </li>
+            </ul>
+        </section>
     </footer>
+ <!-- JS -->
+ <script src="./js/app.js" defer></script>
 </body>
 
 </html>

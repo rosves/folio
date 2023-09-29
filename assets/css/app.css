@@ -1,6 +1,6 @@
 /* Variables */
 :root{
-    --black : #0000;
+    --black : #1E1E1E;
     --pink : #E9CECB;
     --green : #255B4D;
     --rose  : #92564f;
@@ -12,13 +12,38 @@
     padding: 0;
     text-decoration: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 li{
-    text-decoration: dotted;
+    list-style-type: none;
 }
 
 /* Base styles */
 body{
     background: var(--pink);
-    overflow: hidden; /*optional !!!!*/
+    /*overflow: hidden; optional !!!!*/
+    font-size: 12px;
+    font-family: 'Jost', sans-serif;
+    margin: 50px 0;
 }
+
+/* mobile styles */
+/*section 1 : banner + wrapper */
+header, .hero--secondary{
+    display: none;
+}
+
+h1{
+    font-size: 3em;
+    color:var(--black);
+}
+.front_title, .back_title{
+    color: var(--green);
+    font-family: 'Italiana', serif;
+}
+
+/* small tablet styles */
+
+/* large tablets & laptop styles */
+
+/* desktop */
