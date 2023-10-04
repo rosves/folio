@@ -47,9 +47,9 @@ header, .hero--secondary{
 }
 /*section 1 : banner + wrapper */
 h1, .hero__heading{
-    font-size: 3.5em;
+    font-size: 3.4em;
     color:var(--black);
-    width: 100%;
+    width: 95%;
     padding-bottom: 20px;
 }
 h2{
@@ -62,7 +62,7 @@ h2{
 }
 #banner{
     width: 100%;
-    max-width: 1000px;
+    /* max-width: 1000px; */
     margin: auto 0;
 }
 /* section 2 : à propos de moi */
@@ -78,12 +78,15 @@ p:not(.hero__heading){
    justify-self: center;
 }
 /* section 3 : skills */
-
+#skills-container{
+    width: 100%;
+    font-size: 1.5em;
+}
 .line-1 span {
     color: var(--green);
   }
   
-  .line-2 span {
+.line-2 span {
     color: var(--rose);
   }
   
@@ -99,7 +102,7 @@ p:not(.hero__heading){
   }
   
   .line-2 {
-    animation-delay: 1s;
+    animation-delay: 2s;
   }
   
   .line-1:hover,
@@ -128,7 +131,7 @@ p:not(.hero__heading){
     align-items: center;
 }
 h3{
-    font-size: 1.7em;
+    font-size: 1.6em;
     font-family: 'Italiana', serif;
     margin-bottom: 10px;
 }
@@ -137,7 +140,7 @@ h3{
     margin-top: -25px;
 }
 .gallery-item p{
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .gallery-item figure{
@@ -153,6 +156,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .wrapper-social {
@@ -236,7 +240,148 @@ footer{
     color: #ffffff;
   }
 /* small tablet styles */
-
+@media only screen and (min-width: 620px) and (max-width: 799px){
+ body{border: 2px green solid;
+    font-size: 13px;
+ }
+h1{
+    font-size: 65px;
+}
+/* section 4 : projets */
+.gallery-item{
+    width: 50%;
+}
+ 
+}
 /* large tablets & laptop styles */
+@media only screen and (min-width: 800px) and (max-width: 966px){
+    body{
+        font-size: 15.5px;
+        border: 2px violet solid;
+    }
+ 
+    h1{
+        margin: 0 0 0 25px;
+    }
+
+
+    /* section 4 : projets */
+#projets_display{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.gallery-item{border: 2px red solid;
+    width: 38%;
+    height: 400px;
+}
+.gallery-item figure{
+    height: 215px;
+    overflow: hidden;
+}
+}
 
 /* desktop */
+@media only screen and (min-width: 967px){
+    body{
+        border: 2px orangered solid;
+        font-size: 16px;
+    }
+    /* header*/
+
+    header{
+        display: inline-block;
+        margin-top: 3%;
+        width: 100%;
+    }
+    nav{
+        display: flex;
+        justify-content: flex-end;
+    }
+    #navigation{
+        display: flex;
+        flex-direction: row;
+        align-self: flex-end;
+        width: 50%;
+        justify-content: space-around;
+    }
+    #navigation li a{
+        color: var(--black);
+        font-size: 1.5em;
+        font-weight: 500;
+        font-family: 'Italiana', serif;
+        
+    }
+    /* header animation*/
+   
+    .wrapper {
+        position: relative;
+        margin: 0;
+        padding: auto;
+    }
+   
+    
+    .hero { border: 1px var(--green) solid;
+        border-radius: 25px;
+        min-height: 100vh;
+        padding: clamp(1rem, 2vw, 5rem);
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .hero--secondary {
+        --mask: radial-gradient(circle at var(--x, 50%) var(--y, 50%), black 25%, transparent 0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #255B4D;
+        color: #E9CECB;
+        -webkit-mask-image: var(--mask);
+        mask-image: var(--mask);
+        display: block;
+        padding-top: 16%;
+    }
+
+
+    .back_title{
+        color: var(--pink);
+    }
+    .hero__heading {
+            width: 100%;
+            font-size: 80px;
+            margin: 0;
+        
+        }
+    /* banner*/
+    #banner{
+        margin-top: 5%;
+    }
+    /* a propos de moi*/
+    #a_propos{
+        width: 50% ;
+    }
+    /*projets*/
+    #projets_display{
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 90%;
+    }
+    .gallery-item{ border: 1px orangered solid;
+        width: 42%;
+        height: 500px;
+        
+    }
+
+    .gallery-item figure{
+        border: 1px purple solid;
+        width: 100%;
+        height: 280px;
+        overflow: hidden;
+    }
+
+    .gallery-item figure img{
+    width: 100%;
+    height: 100%;
+    }
+}
