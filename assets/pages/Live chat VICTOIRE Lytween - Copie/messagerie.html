@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/4be05ba824.js" crossorigin="anonymous"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Fredoka+One&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/messagerie.css">
+    <!-- JS -->
+    <script src="js/logout.js" defer></script>
+    <script src="js/logged.js" defer></script>
+    <script src="js/message.js" defer></script>
+    <title>Messages</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <form action="" id="formlogout">
+                <button type="submit"> <i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+            </form>
+        </header>
+        
+        <div class="chatbox">
+            <!-- Chat box -->
+            <section class="top-bar">
+                <div class="name">fi-dev4ever</div>
+            </section>
+
+            <div class="middle" id="middle">
+                <!-- chat screen -->
+                <div class="echange scroller">
+                    <!-- messages des autres -->
+                    <div class="incoming" id="incoming_messages"></div>
+                    <!-- mes messages 
+                    <div class="outgoing" id="outgoing_messages">
+                       
+                    </div>--> 
+                    
+                </div>
+            </div>
+
+            <div class="bottom-bar">
+                <!-- typing bar -->
+                <div class="chat">
+                    <form action="" id="message_form">
+                        <input type="text" id="input" placeholder="Type a message..." />
+                        <button type="" id="envoyer"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="participants" id="participants">
+            <div class="profile" id="ppl_online">
+                <p>People online</p>
+                <ul id="ppl_online_names">
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+#scoreboard{
+    position: absolute;
+    z-index: 101;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+    font-size: 55px;
+    font-family: 'Stylish', sans-serif;
+    top: 4%;
+}
+#score{ 
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: aliceblue;
+    font-size: 60px;
+    font-family: 'Stylish', sans-serif;
+    top: 14%;
+}
+
+.aligned{
+    display: flex;
+    flex-direction: row;
+}
+
+#choices{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    height: 8%;
+    top:89%;
+    left:25% ;
+}
+
+.rose{
+    background-color: palevioletred;
+}
+
+.vert{
+    background-color: green;
+}
+
+.orange{
+    background-color: orangered;
+}
+.red{
+    background-color: red;
+}
+
+button{
+width: 25%;
+height: 85%;
+font-size: 20px;
+color: aliceblue;
+border-radius: 25px;
+border: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/* #restart{
+    position: absolute;
+    height: 5%;
+    top: 89%;
+} */

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Fredoka+One&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/login.css">
+    <!-- JS -->
+    <script src="js/kwick.js" defer></script>
+    <script src="js/signup.js" defer></script>
+    <script src="js/login.js" defer></script>
+    <title>KWICK!</title>
+</head>
+
+<body>
+    <main>
+        <!---------- LOGIN ------------>
+        <div class="login" id="login">
+            <form action="verification" class="log-in login" id="formlogin">
+                <h1>login</h1>
+                <input type="name" id='nametologin'placeholder="name" class="login-field placeholder" name="name" required>
+
+                <input type="password" id='passtologin'placeholder="password" class="login-field placeholder" name="password" required>
+
+                <button type="submit" id='submit-login' class="login-field" value='Login'>Login</button>
+                <div class="line"></div>
+                <span>
+                <a id="no_account" class="vert" href="#">No account ? Create one</a></span>
+            </form>
+        </div>
+        <!---------- SIGN UP ------------>
+        <div class="signup" id="signup">
+            
+            <form action="verification" id="formsignup" class="sign-up signup">
+                <h1>sign up</h1>
+                <input type="name" id="name_signup" placeholder="name" class="signup-field placeholder" name="name" required>
+
+                <input type="password" id='passwordsignup'placeholder="password" class="signup-field placeholder" name="password" required>
+            
+                <button type="submit" id='submit-sigup' class="login-field" value='Login'>Sign up</button>
+                <div class="line"></div>
+                <span>
+                <a id="have_account" class="vert" href="#">I have an account</a></span>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
