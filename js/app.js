@@ -1,3 +1,23 @@
+// page animations 
+const tl = gsap.timeline();
+
+tl.from('.navLinks', {y:-50, stagger: .1, opacity:0})
+.from('#title', {opacity :0})
+.from('[data-hero]', {opacity : 0, duration : 0.5 })
+
+const tl_2 = gsap.timeline({duration:0.2,
+  scrollTrigger: {
+    trigger: "#projet"}})
+
+tl_2.from('.gallery-item h3', { opacity: 0, stagger: .2 })
+.from('.gallery-item figure', { opacity : 0, scale : 0.5 , duration : 0.8, stagger :{
+  from:'end',
+  amount : 0.5
+}})
+.from('.gallery-item p', {opacity: 0, translateY: -10, duration: 0.3})
+
+
+
 // banner animation
 
 var textPath = document.querySelector('#text-path');
@@ -26,6 +46,10 @@ function onScroll(){
 
 window.addEventListener('scroll',onScroll);
 
+// scroll animation
+AOS.init({
+  duration: 1200,
+});
 // header animation
 
 const cursor = document.querySelector(".cursor");

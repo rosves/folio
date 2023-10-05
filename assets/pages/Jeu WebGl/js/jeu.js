@@ -187,3 +187,18 @@ function WhoWins() {
   }
   Score.innerHTML = result;
 };
+function checkScreenSize() {
+  const gameScript = document.getElementById('game-script');
+  if (window.innerWidth <= 1460) {
+    gameScript.remove(); 
+  } else {
+   
+    const newScript = document.createElement('script');
+    newScript.src = 'jeu.js';
+    newScript.id = 'game-script';
+    document.body.appendChild(newScript);
+  }
+}
+window.addEventListener('load', checkScreenSize);
+
+window.addEventListener('resize', checkScreenSize);

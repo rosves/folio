@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+     <!-- AOS -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+     <!-- GSAP -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script> 
      <!-- ICONS -->
      <script src="https://kit.fontawesome.com/4be05ba824.js" crossorigin="anonymous"></script>
     <!-- FONTS -->
@@ -22,7 +27,7 @@
                 <li class="navLinks"><a href="#a_propos">A propos de moi</a></li>
                 <li class="navLinks"><a href="#skills">Skills</a></li>
                 <li class="navLinks"><a href="#projets">Projets</a></li>
-                <li class="navLinks"><a href="#contact">Contact</a></li>
+                <li class="navLinks"><a href="#footer">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -58,8 +63,8 @@
     </section>
     <!-- SECTION 2 / A PROPOS DE MOI-->
     <article id="a_propos">
-        <h2>A propos de moi</h2>
-        <p>Je suis Lytween, développeuse frontend en devenir. Actuellement en deuxième année de mon cursus de bachelor
+        <h2 data-aos="fade-up">A propos de moi</h2>
+        <p data-aos="fade-up">Je suis Lytween, développeuse frontend en devenir. Actuellement en deuxième année de mon cursus de bachelor
             en développement web, je m'apprête à poursuivre mes études en alternance. Mon attrait pour les technologies
             web ne connaît pas de limite. L'idée de matérialiser mes concepts me motive particulièrement. J'ai adopté
             une approche où tout ce que je ne maîtrise pas aujourd'hui devient un défi à relever demain. C'est cette
@@ -68,7 +73,7 @@
     </article>
     <!-- SECTION 3 / SKILLS -->
     <section id="skills">
-        <h2>Skills</h2>
+        <h2 data-aos="fade-up">Skills</h2>
         <div id="skills-container">
             <div class="line-1">
                 <span>HTML5</span> CSS <span> JAVASCRIPT</span>
@@ -88,7 +93,7 @@
     </section>
     <!-- SECTION 4 / PROJETS -->
     <section id="projets">
-        <h2>Projets</h2>
+        <h2 data-aos="fade-up">Projets</h2>
         <section id="projets_display">
             <article class="gallery-item one ">
                 <h3>.01</h3>
@@ -109,7 +114,7 @@
             </article>
             <article class=" gallery-item three">
                 <h3>.03</h3>
-                <figure><a href="./assets/pages/Jeu WebGl - Copie/html/index.html" target="_blank"><img
+                <figure><a href="./assets/pages/Jeu WebGl/html/index.html" target="_blank"><img
                             src="./assets/img/pierrefeuilleciseaux.png"
                             alt="interface pierre feuille ciseaux avec un décor de foret asiatique"> </a></figure>
                 <p>Découvrez le jeu de pierre-papier-ciseaux en 3D ! Affrontez l'ordinateur, choisissez vos coups et
@@ -119,7 +124,7 @@
         </section>
     </section></div>
     <!-- SECTION 5 / FOOTER -->
-    <footer>
+    <footer id="footer">
         <h2>Contactez moi ! </h2>
         <section>
             <ul class="wrapper-social">
@@ -135,6 +140,8 @@
             </ul>
         </section>
     </footer>
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
  <!-- JS -->
  <script src="./js/app.js" defer></script>
 </body>
