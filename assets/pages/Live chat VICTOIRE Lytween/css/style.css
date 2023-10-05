@@ -11,6 +11,7 @@ body{
     width: 576px;
     font-family: 'Alata', sans-serif;
     height: 100vh;
+    overflow: hidden;
 }
 
 /* ---------------- style --------------- */
@@ -53,6 +54,24 @@ body{
 }
 .mobile figure{
     align-self: bottom;
+}
+#error{
+    display: none;
+}
+@media only screen and (max-width: 1400px){
+
+    .mobile{
+        display: none;
+    }
+    #error{
+     background-color: #db9c90;
+     display: flex;
+     height: 100vh;
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+    }
+   
 }
 
 @media only screen and (min-width: 600px) {

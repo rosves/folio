@@ -54,6 +54,7 @@ h1, .hero__heading {
     color: var(--black);
     width: 95%;
     padding-bottom: 20px;
+    margin-left: 20px;
 }
 
 h2 {

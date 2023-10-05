@@ -84,6 +84,27 @@ body{
     padding-left: 5% ;
 }
 
+#error{
+display: none;
+}
+
+@media only screen and (max-width: 1400px){
+
+    .login, .signup{
+        display: none;
+    }
+    #error{
+     background-color: #db9c90;
+     display: flex;
+     height: 100vh;
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+    }
+   
+}
+
+
 @media only screen and (min-width: 600px) { /* TODO */
    
     body {

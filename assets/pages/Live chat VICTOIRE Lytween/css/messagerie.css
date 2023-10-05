@@ -210,3 +210,22 @@ cursor:hover {
   transition: all .3s ease-in-out;
   color: #C2EABA;
 }
+#error{
+  display : none;
+}
+
+@media only screen and (max-width: 1300px){
+
+  .container{
+      display: none;
+  }
+  #error{
+   background-color: #db9c90;
+   display: flex;
+   height: 100vh;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+  }
+ 
+}
