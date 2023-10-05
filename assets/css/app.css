@@ -243,7 +243,7 @@ footer{
   }
 /* small tablet styles */
 @media only screen and (min-width: 620px) and (max-width: 799px){
- body{border: 2px green solid;
+ body{
     font-size: 13px;
  }
 h1{
@@ -259,7 +259,6 @@ h1{
 @media only screen and (min-width: 800px) and (max-width: 966px){
     body{
         font-size: 15.5px;
-        border: 2px violet solid;
     }
  
     h1{
@@ -272,7 +271,7 @@ h1{
     flex-direction: row;
     flex-wrap: wrap;
 }
-.gallery-item{border: 2px red solid;
+.gallery-item{
     width: 38%;
     height: 400px;
 }
@@ -285,7 +284,6 @@ h1{
 /* desktop */
 @media only screen and (min-width: 967px){
     body{
-        border: 2px orangered solid;
         font-size: 16px;
     }
     /* header*/
